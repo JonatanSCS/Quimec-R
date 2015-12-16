@@ -2,14 +2,260 @@ doctype html
 
 html
 	head
-		title Guia Turistica México
+		title Quimec
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(rel="stylesheet", href="css/normalize.css")
 		link(rel="stylesheet", href="css/style.css")
+		link(rel="stylesheet", href="css/icon-style.css")
 		link(rel="stylesheet", href="css/bootstrap.css")
 	body
-		h1 Hola Boot
-		span(class="glyphicon glyphicon-pencil")
+		div(class="container-fluid")
+			header
+				div(class="row fila-datos")
+					div(class="datos")
+
+
+						div(class="elemento-dato col-lg-offset-1 hidden-xs col-sm-3 col-md-2 col-lg-2")
+							a(href="")
+								span(class="icon icon-users")
+								span  Proveedores
+
+
+						div(class="elemento-dato col-md-offset-1 col-lg-offset-3 col-xs-4 col-sm-3 col-md-3 col-lg-2")
+							span(class="icon icon-phone")
+							span  55 5312 6216
+
+
+						div(class="elemento-dato elemento-dato-correo col-xs-4 col-sm-3 col-md-3 col-lg-2")
+							span(class="icon icon-bubble")
+							span contacto@quimec.com.mx 
+
+
+						div(class="elemento-dato col-xs-4 col-sm-3 col-md-3 col-lg-2")
+							span(class="icon icon-clock")
+							span  L-S 9am-6pm
+
+				div(class="row row-nav")
+					nav(class="navbar navbar-default")
+						div(class="container-fluid")
+							div(class="navbar-header")
+								button(type=button ,class="navbar-toggle collapsed", data-toggle="collapse", data-target="#navbar-menu")
+									span(class="sr-only") Menu
+									span(class="icon-bar")
+									span(class="icon-bar")
+									span(class="icon-bar")
+								img(src="img/logo-quimec.png", alt="",class="hidden-sm hidden-md hidden-lg col-xs-3")
+							div(class="collapse navbar-collapse ", id="navbar-menu")
+								img(src="img/logo-quimec.png", alt="",class="hidden-xs")
+								ul(class="nav navbar-nav col-md-offset-4 col-md-6")
+									li(class="")
+										a(href="") ¿Quénes Somos?
+									li(class="")
+										a(href="") Servicios
+									li(class="")
+										a(href="") Proyectos
+									li(class="")
+										a(href="") Contacto
+			div(class="row row-slide")
+				div(class="col-md-12")
+					div(class="carousel slide", id="carousel-1", data-ride="carousel")
+						
+						ol(class="carousel-indicators")
+							li(data-target="#carousel-1", data-slide-to="0", class="active")
+							li(data-target="#carousel-1", data-slide-to="1")
+							li(data-target="#carousel-1", data-slide-to="2")
+						
+						div(class="carousel-inner", role="listbox")
+							div(class="item active")
+								img(src="img/nosotros-slide.jpg", class="img-responsive",alt="")
+								div(class="carousel-caption")
+									h3 Acerca de Nosotros
+									p  Somos una empresa mexicana dedicada a la venta y aplicación de productos terminados y químicos para la industria de la construcción
+									span(class="icon-phone")
+							div(class="item")
+								img(src="img/revolucion-monumento-slide.jpg", class="img-responsive",alt="")
+								div(class="carousel-caption")
+									h3 Proyectos
+									p  Nuestra trayectoria nos respalda. Da clic para conocer más de nuestro trabajo
+									span(class="icon-phone")
+							
+							div(class="item")
+								img(src="img/proyectos-slide.jpg", class="img-responsive",alt="")
+								div(class="carousel-caption")
+									h3 Contáctanos
+									p  ¡Solicita asesoría de un experto ahora! Conoce nuestros medios de contacto!
+									span(class="icon-phone")
+						a(href="#carousel-1", class="left carousel-control", role="button", data-slide="prev")
+							span(class="glyphicon glyphicon-chevron-left", aria-hidden="true")
+						a(href="#carousel-1", class="right carousel-control", role="button", data-slide="next")
+							span(class="glyphicon glyphicon-chevron-right", aria-hidden="true")
+			div(class="row row-interesa")
+				div(class="col-xs-12 interesa")
+					div(class="hidden-xs col-sm-4 col-md-6")
+						span(class="cotizacion") ¿Te interesa una cotización?
+					div(class="contacto col-xs-12 col-sm-8 col-md-6")
+						div(class="col-xs-6 col-sm-6 col-md-6")
+							span Contácto  
+							span(class="icon-phone icon")
+						div(class="col-xs-6 col-sm-6 col-md-6")
+							span Proyectos  
+							span(class="icon-phone icon")
+			div(class="row row-servicios")
+				div(class="col-xs-12px")
+					div(class="servicio-texto")
+						h2 Servicios
+						p Somos una empresa mexicana dedicada a la venta y aplicación de productos terminados y químicos para la industria de la construcción.
+					div(class="servicios-elementos col-xs-12")
+						div(class="servicio-elemento col-xs-12 col-sm-4")
+							img(src="img/recubrimientos.jpg", alt="")
+							h4 Recubrimientos
+						div(class="servicio-elemento col-xs-12 col-sm-4")
+							img(src="img/refuerzo.jpg", alt="")
+							h4 Refuerzo de estructuras
+						div(class="servicio-elemento col-xs-12 col-sm-4")
+							img(src="img/impermeabilizacion.jpg", alt="")
+							h4 Impermeabilización
+			div(class="row row-proyectos hidden-xs")
+				div(class="col-xs-12")
+					div(class="proyectos-titulo")
+						h2 Proyectos
+					div(class="proyectos-imagenes col-xs-12")
+						div(class="proyecto-imagen col-md-2")
+							img(src="http://lorempixel.com/245/215/city/1",alt="")
+						div(class="proyecto-imagen col-md-2")
+							img(src="http://lorempixel.com/245/215/city/2",alt="")
+						div(class="proyecto-imagen col-md-2")
+							img(src="http://lorempixel.com/245/215/city/3",alt="")
+						div(class="proyecto-imagen col-md-2")
+							img(src="http://lorempixel.com/245/215/city/4",alt="")
+						div(class="proyecto-imagen col-md-2")
+							img(src="http://lorempixel.com/245/215/city/5",alt="")
+						div(class="proyecto-imagen col-md-2")
+							img(src="http://lorempixel.com/245/215/city/6",alt="")
+			div(class="row row-slide row-slide-proyectos hidden-sm hidden-md hidden-lg")
+				div(class="col-md-12")
+					div(class="proyectos-titulo")
+						h2 Proyectos
+					div(class="carousel slide", id="carousel-2", data-ride="carousel")
+						div(class="carousel-inner", role="listbox")
+							div(class="item active")
+								img(src="http://lorempixel.com/400/400/city/1",alt="")
+							div(class="item")
+								img(src="http://lorempixel.com/400/400/city/2",alt="")
+							div(class="item")
+								img(src="http://lorempixel.com/400/400/city/3",alt="")
+							div(class="item")
+								img(src="http://lorempixel.com/400/400/city/4",alt="")
+							div(class="item")
+								img(src="http://lorempixel.com/400/400/city/5",alt="")
+							div(class="item")
+								img(src="http://lorempixel.com/400/400/city/6",alt="")
+
+						a(href="#carousel-2", class="left carousel-control", role="button", data-slide="prev")
+							span(class="glyphicon glyphicon-chevron-left", aria-hidden="true")
+						a(href="#carousel-2", class="right carousel-control", role="button", data-slide="next")
+							span(class="glyphicon glyphicon-chevron-right", aria-hidden="true")
+			div(class="row row-trabajamos")
+				section(class="trabajamos-contenido col-xs-12")
+					h3(class="col-sm-offset-1 col-xs-10") ¿Cómo trabajamos?
+					ul(class="col-sm-offset-1 col-lg-10")
+						li(class="col-xs-5 col-sm-3")
+							img(src="img/quienes-1.svg", alt="")
+							p Te visitamos personalmente
+						
+						li(class="plus-li col-xs-2 col-sm-1")
+							span(class="icon-plus")
+						
+						li(class="col-xs-5 col-sm-3")
+							img(src="img/quienes-2.svg", alt="")
+							p Vemos tus necesidades y hacemos un proyecto por escrito
+						
+						li(class="plus-li hidden-xs col-sm-1")
+							span(class="icon-plus")
+						
+						li(class="col-xs-5 col-sm-3")
+							img(src="img/quienes-3.svg", alt="")
+							p Una vez autorizado, firmamos contrato y te damos fechas de entrega
+						li(class="plus-li col-xs-2 hidden-sm hidden-md hidden-lg")
+							span(class="icon-plus")
+						
+						li(class="col-xs-5 col-sm-3")
+							img(src="img/quienes-4.svg", alt="")
+							p Mandamos nuestro personal a tu domicilio a trabajar
+						
+						li(class="plus-li hidden-xs col-sm-1")
+							span(class="icon-plus")
+						
+						li(class="col-xs-5 col-sm-3")
+							img(src="img/quienes-5.svg", alt="")
+							p Todos los dias, un supervisor evalua el trabajo
+						
+						li(class="plus-li col-xs-2 col-sm-1")
+							span(class="icon-plus")
+						
+						li(class="col-xs-5 col-sm-3")
+							img(src="img/quienes-6.svg", alt="")
+							p Te entregamos terminando el trabajo junto con nuestra garantia
+			div(class="row row-proveedores")
+				section(class="proveedores-contenido col-xs-12")
+					h3(class="col-sm-offset-1 col-xs-10") Proveedores
+					ul(class="col-sm-offset-1 col-lg-10")
+						li(class="col-xs-6 col-sm-4")
+							img(src="img/basf-proveedor.jpg", alt="")
+						li(class="col-xs-6 col-sm-4")
+							img(src="img/imperquimia-proveedor.png", alt="")
+						li(class="col-xs-6 col-sm-4")
+							img(src="img/sherwin-williams-proveedor.png", alt="")
+						li(class="col-xs-6 col-sm-4")
+							img(src="img/sika-proveedor.png", alt="")
+						li(class="col-xs-6 col-sm-4")
+							img(src="img/euclid-proveedor.png", alt="")
+						li(class="col-xs-6 col-sm-4")
+							img(src="img/basf-proveedor.jpg", alt="")
+			footer
+				div(class="row row-footer")
+					div(class="footer-top")
+						div(class="col-sm-offset-1 col-xs-12 col-sm-4")
+							h4
+								span Dirección
+							img(src="img/logo-quimec.png", alt="")
+							p Av. De los Arcos No.46 Col. Ampliación de los Remedios, Naucalpan, Edo. Mex. C.P. 53400
+						div(class="col-xs-12 col-sm-3")
+							h4
+								span Secciones
+							ul
+								li
+									a(href="") Home
+								li
+									a(href="") Contact
+								li
+									a(href="") Blog
+								li
+									a(href="") Pages
+						div(class="col-xs-12 col-sm-4")
+							h4
+								span Contactanos
+							ul
+								li
+									span(class="icon icon-phone")
+									span  01(55) 5312 6216
+								li
+									span(class="icon icon-bubble")
+									span  contacto@quimec.com.mx
+								li
+									span(class="icon icon-clock")
+									span  Lunes - Sabado 7am - 5pm
+						div(class="footer-bottom col-xs-12")
+							span Desarrollado por
+								a(href="")  Meinen.mx
+
+
+
+
+
+
+
 
 		script(src="scripts/jquery.js")
-		scripts(src="scripts/bootstrap.js")
+		script(src="scripts/bootstrap.js")
